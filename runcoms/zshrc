@@ -11,4 +11,17 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+if [[ -s "${ZDOTDIR:-$HOME}/.aliases" ]]; then
+  source "${ZDOTDIR:-$HOME}/.aliases"
+fi
+
+if [[ -s "${ZDOTDIR:-$HOME}/.aliases-this-machine" ]]; then
+  source "${ZDOTDIR:-$HOME}/.aliases-this-machine"
+fi
+
+# make ctrl + arrow keys work
+bindkey '^[[1;5C' emacs-forward-word
+bindkey '^[[1;5D' emacs-backward-word
+
+PS1='%F{cyan}%~%f${git_info:+${(e)git_info[prompt]}}%(!. %B%F{red}#%f%b.)${editor_info[keymap]} '
 
