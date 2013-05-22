@@ -46,6 +46,9 @@ zstyle ':prezto:module:editor' keymap 'emacs'
 # Auto convert .... to ../..
 # zstyle ':prezto:module:editor' dot-expansion 'yes'
 
+# Auto complete .. to ../
+zstyle ':completion:*' special-dirs true
+
 #
 # Git
 #
