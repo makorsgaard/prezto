@@ -100,12 +100,12 @@ alias gix='git rm -r --cached'
 alias giX='git rm -rf --cached'
 
 # Log (l)
-alias gl='git log --topo-order --pretty=format:"${_git_log_medium_format}"'
-alias gls='git log --topo-order --stat --pretty=format:"${_git_log_medium_format}"'
-alias gld='git log --topo-order --stat --patch --full-diff --pretty=format:"${_git_log_medium_format}"'
-alias glo='git log --topo-order --pretty=format:"${_git_log_oneline_format}"'
-alias glg='git log --topo-order --all --graph --pretty=format:"${_git_log_oneline_format}"'
-alias glb='git log --topo-order --pretty=format:"${_git_log_brief_format}"'
+alias gl='git log --topo-order --pretty=format:${_git_log_medium_format}'
+alias gls='git log --topo-order --stat --pretty=format:${_git_log_medium_format}'
+alias gld='git log --topo-order --stat --patch --full-diff --pretty=format:${_git_log_medium_format}'
+alias glo='git --no-pager log --topo-order --pretty=format:${_git_log_oneline_format} -n 10'
+alias glg='git log --topo-order --all --graph --pretty=format:${_git_log_oneline_format}'
+alias glb='git log --topo-order --pretty=format:${_git_log_brief_format}'
 alias glc='git shortlog --summary --numbered'
 
 # Merge (m)
@@ -169,8 +169,7 @@ alias gSu='git submodule foreach git pull origin master'
 alias gSx='git-submodule-remove'
 
 # Working Copy (w)
-alias gws='git status --ignore-submodules=${_git_status_ignore_submodules} --short'
-alias gwS='git status --ignore-submodules=${_git_status_ignore_submodules}'
+alias gst='git status'
 alias gwd='git diff --no-ext-diff'
 alias gwD='git diff --no-ext-diff --word-diff'
 alias gwr='git reset --soft'
