@@ -24,3 +24,4 @@ bindkey '^[[1;5D' emacs-backward-word
 
 # full paths in prompt
 PS1='%F{cyan}%~%f${git_info:+${(e)git_info[prompt]}}%(!. %B%F{red}#%f%b.)${editor_info[keymap]} '
+
