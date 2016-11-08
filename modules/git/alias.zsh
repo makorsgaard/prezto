@@ -66,7 +66,7 @@ alias gCt='git checkout --theirs --'
 alias gCT='gCt $(gCl)'
 
 # Data (d)
-alias gd='git ls-files'
+alias gls='git ls-files'
 alias gdc='git ls-files --cached'
 alias gdx='git ls-files --deleted'
 alias gdm='git ls-files --modified'
@@ -101,7 +101,7 @@ alias giX='git rm -rf --cached'
 
 # Log (l)
 alias gl='git log --topo-order --pretty=format:${_git_log_medium_format}'
-alias gls='git log --topo-order --stat --pretty=format:${_git_log_medium_format}'
+#alias gls='git log --topo-order --stat --pretty=format:${_git_log_medium_format}'
 alias gld='git log --topo-order --stat --patch --full-diff --pretty=format:${_git_log_medium_format}'
 alias glo='git --no-pager log --topo-order --pretty=format:${_git_log_oneline_format} -n 10'
 alias glg='git log --topo-order --all --graph --pretty=format:${_git_log_oneline_format}'
@@ -143,7 +143,7 @@ alias gRs='git remote show'
 alias gRb='git-hub-browse'
 
 # Stash (s)
-alias gs='git stash'
+#alias gs='git stash'
 alias gsa='git stash apply'
 alias gsx='git stash drop'
 alias gsX='git-stash-clear-interactive'
@@ -170,7 +170,7 @@ alias gSx='git-submodule-remove'
 
 # Working Copy (w)
 alias gst='git status'
-alias gwd='git diff --no-ext-diff'
+alias gd='git diff --no-ext-diff'
 alias gwD='git diff --no-ext-diff --word-diff'
 alias gwr='git reset --soft'
 alias gwR='git reset --hard'

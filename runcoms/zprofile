@@ -47,10 +47,27 @@ typeset -gU cdpath fpath mailpath path
 path=(
   /usr/lib/ccache
   /usr/local/{bin,sbin}
+  /home/mko/toolchains/myriad/mdk_release_16.06.5_general_purpose/tools/00.50.75.5/linux64/sparc-myriad-elf-4.8.2/bin
+  /home/mko/toolchains/gcc-arm-embedded/5_2-2015q4-20151219/bin
+  /home/mko/toolchains/bh3-pdsdk/011/sysroots/x86_64-angstromsdk-linux/usr/bin/arm-angstrom-linux-gnueabi
   /home/mko/bin
   /home/mko/src/tstools/bin
+  /usr/local/cuda-6.5/bin
+  /home/mko/android-studio/bin/
+  /home/mko/src/pd1/pdrepos02/_build/x86_64/bin
+  /home/mko/src/pd2/pdrepos02/_build/x86_64/bin
+  /home/mko/src/pd3/pdrepos02/_build/x86_64/bin
+  /home/mko/src/pd1/pdrepos02/scripts
+  /home/mko/src/pd2/pdrepos02/scripts
+  /home/mko/src/pd3/pdrepos02/scripts
   $path
 )
+
+hode=~/src/pd1/pdrepos02
+skulder=~/src/pd2/pdrepos02
+kne=~/src/pd3/pdrepos02
+
+: ~hode ~skulder ~kne
 
 #
 # Less
