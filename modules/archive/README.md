@@ -1,13 +1,13 @@
 Archive
 =======
 
-Provides functions to extract and list popular archive formats.
+Provides functions to list and extract archives.
 
 Functions
 ---------
 
-  - `extract` extracts the contents of one or more archives.
-  - `ls-archive` lists the contents of one or more archives.
+  - `lsarchive` lists the contents of one or more archives.
+  - `unarchive` extracts the contents of one or more archives.
 
 Supported Formats
 -----------------
@@ -38,4 +38,3 @@ Authors
   - [Sorin Ionescu](https://github.com/sorin-ionescu)
 
 [1]: https://github.com/sorin-ionescu/prezto/issues
-
