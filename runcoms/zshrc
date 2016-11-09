@@ -25,3 +25,8 @@ bindkey '^[[1;5D' emacs-backward-word
 
 PS1='%F{cyan}%~%f${git_info:+${(e)git_info[prompt]}}%(!. %B%F{red}#%f%b.)${editor_info[keymap]} '
 
+hode=/home/mko/src/pd1/pdrepos02
+skulder=/home/mko/src/pd2/pdrepos02
+kne=/home/mko/src/pd3/pdrepos02
+
+: ~hode ~skulder ~kne
